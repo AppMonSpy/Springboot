@@ -1,0 +1,42 @@
+Request:
+--------
+https://www.google.com/async/finance_wholepage_price_updates?ei=9bvrXrDmH5Tg-gTPwIKgCw&rlz=1C1GCEA_enUS900US900&yv=3&dfsl=1&async=mids:%2Fg%2F1dtybkr2,currencies:,_fmt:jspb
+
+
+Response:
+---------
+)]}'
+{"PriceUpdate":[[[[0,"/g/1dtybkr2",null,"NYSE",null,null,null,"USD",null,null,null,null,null,null,null,["0.91","−0.0010","0.11%",3,"Jun 18, 5:27 PM EDT",4]
+,null,[["/g/1dtybkr2"]
+,"GNC Holdings Inc","GNC","0.91",0.91,"−0.030","3.19%",3,"Jun 18, 4:00 PM EDT","/search?safe\u003dactive\u0026rlz\u003d1C1GCEA_enUS900US900\u0026tbm\u003dfin\u0026sxsrf\u003dALeKk00gzB2SkDaltgn5Z7KjGFTmnIoKpw:1592516882568\u0026q\u003dNYSE:+GNC\u0026stick\u003dH4sIAAAAAAAAAONgecRoxi3w8sc9YSndSWtOXmNU5-IKzsgvd80rySypFJLkYoOy-KV4ubj10_UNU0oqk7KLjHgWsXL6RQa7Wim4-zkDANBMIlRHAAAA","4:00 PM EDT",10]
+,null,[0.94,2]
+]
+,null,["/g/1dtybkr2"]
+]
+]
+]
+}
+
+
+JsonData:
+---------
+{"PriceUpdate":[[[[0,"/g/1dtybkr2",null,"NYSE",null,null,null,"USD",null,null,null,null,null,null,null,["0.91","−0.0010","0.11%",3,"Jun 18, 5:27 PM EDT",4]
+,null,[["/g/1dtybkr2"]
+,"GNC Holdings Inc","GNC","0.91",0.91,"−0.030","3.19%",3,"Jun 18, 4:00 PM EDT","/search?safe\u003dactive\u0026rlz\u003d1C1GCEA_enUS900US900\u0026tbm\u003dfin\u0026sxsrf\u003dALeKk00gzB2SkDaltgn5Z7KjGFTmnIoKpw:1592516882568\u0026q\u003dNYSE:+GNC\u0026stick\u003dH4sIAAAAAAAAAONgecRoxi3w8sc9YSndSWtOXmNU5-IKzsgvd80rySypFJLkYoOy-KV4ubj10_UNU0oqk7KLjHgWsXL6RQa7Wim4-zkDANBMIlRHAAAA","4:00 PM EDT",10]
+,null,[0.94,2]
+]
+,null,["/g/1dtybkr2"]
+]
+]
+]
+}
+
+
+Formatted Json file: 
+--------------------
+Grafana\src\main\resources\file.json
+
+
+Google Search:
+--------------
+gnc share
