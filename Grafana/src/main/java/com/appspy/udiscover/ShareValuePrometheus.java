@@ -11,17 +11,10 @@ import java.util.List;
 import com.appspy.udiscover.model.PriceUpdate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.prometheus.client.Counter;
 import io.prometheus.client.Gauge;
-import io.prometheus.client.Histogram;
-import io.prometheus.client.Summary;
 import io.prometheus.client.exporter.HTTPServer;
 
 public class ShareValuePrometheus {
-
-	private static double rand(double min, double max) {
-		return min + (Math.random() * (max - min));
-	}
 
 	public static double getShare() {
 		double shareValue = 0;
@@ -44,8 +37,8 @@ public class ShareValuePrometheus {
 				ObjectMapper mapper = new ObjectMapper();
 				PriceUpdate priceUpdate = mapper.readValue(jsonValue, PriceUpdate.class);
 				List required = (List)priceUpdate.getPriceUpdate().get(0).get(0).get(0).get(17);
-				System.out.println(required.get(3));
-				shareValue = Double.parseDouble(required.get(3).toString());
+				System.out.println(required.get(4));
+				shareValue = Double.parseDouble(required.get(4).toString());
 			} else {
 				System.out.println("Some error has happened.");
 			}
