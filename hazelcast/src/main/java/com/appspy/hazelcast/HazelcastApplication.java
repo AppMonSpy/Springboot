@@ -43,18 +43,22 @@ public class HazelcastApplication {
 		appspyService.insertAppspys(appspys);
 		
 		
-		
+		long l1 = System.currentTimeMillis();
 		System.out.println("Inside the main class making call to service first time");
 		List<Appspy> appspyList1 = appspyService.getAllAppspys();
 		for (Appspy appspy : appspyList1) {
 			System.out.println(appspy.toString());
 		}
+		long l2 = System.currentTimeMillis();
 		
-		
+		long l3 = System.currentTimeMillis();
 		System.out.println("Inside the main class making call to service second time where it will use hazelcast");
 		List<Appspy> appspyList2 = appspyService.getAllAppspys();
 		for (Appspy appspy : appspyList2) {
 			System.out.println(appspy.toString());
 		}
+		long l4 = System.currentTimeMillis();
+		System.out.println("Database call time taken : " +(l2-l1));
+		System.out.println("Hazelcast call time taken : " +(l3-l4));
 	}
 }
